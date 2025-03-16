@@ -1,5 +1,3 @@
-# Instead of using pip freeze > requirements.txt
-# Manually list only the packages your app actually needs:
-streamlit==1.35.0
-pandas==2.0.3
+streamlit==1.31.0
+pandas==1.5.3
 numpy==1.24.3
