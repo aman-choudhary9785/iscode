@@ -3,46 +3,17 @@ import pandas as pd
 import numpy as np
 
 st.set_page_config(
-    page_title="Geopolymer Concrete Mix Design Calculator By AMAN CHOUDHARY",
+    page_title="Geopolymer Concrete Mix Design Calculator",
     page_icon="🧪",
     layout="wide"
 )
 
-# Add custom CSS
+# Simplified CSS
 st.markdown("""
 <style>
-    .main-header {
-        font-size: 2.5rem;
-        color: #0f66bd;
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-    .section-header {
-        background-color: #f0f2f6;
-        padding: 0.5rem;
-        border-radius: 5px;
-    }
-    .result-box {
-        background-color: #f8f9fa;
-        padding: 1rem;
-        border-radius: 5px;
-        border-left: 5px solid #0f66bd;
-        margin: 1rem 0;
-    }
-    .info-box {
-        background-color: #e7f0ff;
-        padding: 1rem;
-        border-radius: 5px;
-        border-left: 5px solid #4c8dff;
-        margin: 1rem 0;
-    }
-    .warning-box {
-        background-color: #fff3cd;
-        padding: 1rem;
-        border-radius: 5px;
-        border-left: 5px solid #ffc107;
-        margin: 1rem 0;
-    }
+    .main-header {color: #0f66bd; text-align: center;}
+    .section-header {background-color: #f0f2f6; padding: 0.5rem; border-radius: 5px;}
+    .result-box {background-color: #f8f9fa; padding: 1rem; border-radius: 5px; border-left: 5px solid #0f66bd;}
 </style>
 """, unsafe_allow_html=True)
 
@@ -198,7 +169,8 @@ def geopolymer_mix_design(target_strength, precursors, activators, fine_agg, coa
     return results
 
 # Application title
-st.markdown('<h1 class="main-header">Geopolymer Concrete Mix Design Calculator<br>(IS 17452:2020)</h1>', unsafe_allow_html=True)
+# UI Components
+st.markdown('<h1 class="main-header">Geopolymer Concrete Mix Design Calculator (IS 17452:2020)</h1>', unsafe_allow_html=True)
 
 st.markdown("""
 <div class="info-box">
